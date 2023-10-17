@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-app.get('/cats/fact', async function (req, res, next) {
+app.get('/cat/fact', async function (req, res, next) {
   try {
     var response = await axios.get('https://catfact.ninja/facts');
 
