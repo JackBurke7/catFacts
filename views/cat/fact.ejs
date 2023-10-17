@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random Cat Fact</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FF6600;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 30%; /* You can adjust the percentage to make it smaller */
+            height: auto;
+            margin-top: 160px; /* Add margin-top to move the image lower */
+        }
+        a {
+            color: #FFCC00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="../../views/cat/IMG_5074.png" alt="Halloween Cat" />
+    </div>
+    <div class="content">
+        <h1>Random Cat Fact</h1>
+        <p><%= catFact %></p>
+        <a href="/cat/fact">Get another cat fact!</a>
+    </div>
+</body>
+</html>
